@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+      
+<head>
+      
+    <!-- style to set height property to
+            display content -->
+    <style>
+        p {
+            color:white;
+        }
+        .main {
+            background-color:black;
+            height:auto;
+            border-radius: 20px 20px 0px 0px;
+        }
+        .left-column {
+            background-color:indigo;
+            height:auto;
+            width:49%;
+            float:left;
+            border-bottom-left-radius: 20px;
+        }
+        .right-column{
+            background-color:green;
+            height:7.5em;
+            width:49%;
+            float:right;
+            border-bottom-right-radius: 20px;
+        }
+        h1{
+            color:Green;
+        }
+    </style>
+    <script type="text/javascript">
+        function escreve()
+        {
+            var span = document.getElementById("spanExibe");
+            var texto = document.getElementById("input_valor").value + " ";
+
+            span.append(texto)
+        }
+    </script>
+</head>
+  
+<body>
+    <center>
+      
+    <h1>Pagina de exemplo subida Git</h1>
+      
+    <div class="main">
+        <p>
+            Atividade somativa
+        </p>
+    </div>
+  
+    <div class="left-column">
+        <p> 
+            <input type="text" id="input_valor" name="input_valor"><input type="button" id="botao" name="botao" value="Enviar" onclick="escreve()">
+        </p>
+    </div>
+  
+    <div class="right-column">
+        <p>
+            <span id="spanExibe">
+            
+            </span>
+        </p>
+    </div>
+    </center>
+</body>
+  
+</html>
